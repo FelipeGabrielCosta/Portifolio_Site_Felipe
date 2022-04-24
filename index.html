@@ -19,8 +19,10 @@
     <link rel="stylesheet" href="css/estilo.css">
     <!--JavaScript personalisado -->
     <script src="js/logica.js"></script>
-     <!-- Font Awesome -->
-     <script src="https://kit.fontawesome.com/0c6d3f23ae.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0c6d3f23ae.js" crossorigin="anonymous"></script>
+    <!--AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!--[if lt IE 9]>
 	    <script src="html5shiv.js"></script>
@@ -55,18 +57,18 @@
     </header> <!--Header Fim-->
 
     <section id="apresentacao"> <!--Inicio Apresentação-->
-        <div class="container">
+        <div class="container" data-aos="fade-up">
           <div class="row ">
-            <diV class="col-md-6 d-flex"> <!--Incio Textos-->
-              <div class="align-self-center text-center mb-4">
-                <h1 class="border-bottom border-secondary display-6">Hola! Sou Felipe Gabriel</h1>
-                <p class="mt-4">
-                   Desenvolvedor WEB em HTML | CSS | JavaScript | PHP | MySQL | jQuery
+            <diV class="col-md-6 d-flex js-play-on-screen"> <!--Incio Textos-->
+              <div class="align-self-center text-center">
+                <h1 class="border-bottom border-secondary display-6 mb-4">Hola! Sou Felipe Gabriel</h1>
+                <p>
+                  Desenvolvedor WEB em HTML | CSS | JavaScript | PHP | MySQL | jQuery
                 </p>
               </div>
             </diV><!--Fim Textos-->
-            <div class="col-md-6 d-flex mt-4">
-              <div class="align-self-start text-start float-start">
+            <div class="col-md-6 d-flex">
+              <div class="align-self-start text-start mt-4">
                 <img src="img/fotoMinha.jpeg" alt="Foto do criador do site - Felipe Gabriel - sorrindo com um chapéu preto, de óculos e uma camiseta amarela." class="rounded m-auto">
               </div>
             </div>
@@ -75,15 +77,15 @@
     </section><!--Fim apresentacao-->
 
     <section id="sobre"> <!--Inicio Sobre-->
-        <div class="container">
+        <div class="container" data-aos="fade-right">
           <div class="row ">
             <diV class="col-md-6 d-block text-center"> <!--Incio Textos-->
-              <div class="mt-4">
+              <div class="align-self-center mt-">
                 <h1 class="border-bottom border-secondary display-1">Sobre Mim</h1>
               </div>
             </diV>
-            <diV class="d-flex col-md-6 text-justify "> <!--Incio Textos-->
-                <div class="align-self-center text-justify mt-4">
+            <diV class="d-flex col-md-6 text-justify"> <!--Incio Textos-->
+                <div class="align-self-center text-justify">
                   <p>
                         Me chamo Felipe Gabriel, tenho 19 anos e amo tecnologia. Recentemente me formei em Técnico em Desenho de Construção Civil pelo Instituto Federal de Educação,
                         Ciência e Tecnologia do Estado de Mato Grosso - Campus Várzea Grande. Mas essa não era a minha área de paixão, logo descobri que a minha vida mudaria. Comecei a estudar Desenvolvimento WEB
@@ -99,46 +101,63 @@
     </section><!--Fim Sobre-->
   
     <section id="projetos"> <!--Inicio Projetos-->
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <div class="row">
-                <div id="carouselProjetos" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <a href="https://app-game-mata-mosquito.vercel.app/"><img src="img/AppGameMataMosquito.png" class="d-block w-100" alt="Imagem da página de inciar do App Game Mata Mosquito."></a>
+              <diV class="col-md-12 d-block text-center"> <!--Incio Textos-->
+                <div class="mt-4">
+                  <h1 class="border-bottom border-secondary display-1">Projetos</h1>
+                </div>
+              </diV>
+              <diV class="col-md-12 d-block text-center"> <!--Incio Textos-->
+                <div class="mt-4">
+                  <div id="carouselProjetos" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="4" aria-label="Slide 5"></button>
                       </div>
-                      <div class="carousel-item">
-                        <a href="https://calculadora-javascript-tau.vercel.app/"><img src="img/calculadora-js.png" class="d-block w-100" alt="Imagem da página principal do site: Calculadora JavaScript."></a>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <a href="https://app-game-mata-mosquito.vercel.app/"><img src="img/AppGameMataMosquito.png" class="d-block w-100" alt="Imagem da página de inciar do App Game Mata Mosquito."></a>
+                        </div>
+                        <div class="carousel-item">
+                          <a href="https://calculadora-javascript-tau.vercel.app/"><img src="img/calculadora-js.png" class="d-block w-100" alt="Imagem da página principal do site: Calculadora JavaScript."></a>
+                        </div>
+                        <div class="carousel-item">
+                          <a href="https://felipe-gabriel-desenvolvedor-web.vercel.app/"><img src="img/pg-principal-siteFelipe.png" class="d-block w-100" alt="Página principal do site Felipe Gabriel - Desenvolvedor WEB"></a>
+                        </div>
+                        <div class="carousel-item">
+                          <a href="img/finans.png"><img src="img/finans.png" class="d-block w-100" alt="Página principal do site Felipe Gabriel - Desenvolvedor WEB"></a>
+                        </div>
+                        <div class="carousel-item">
+                          <a href="img/MuseuNacional.png"><img src="img/MuseuNacional.png" class="d-block w-100" alt="Página principal do site Felipe Gabriel - Desenvolvedor WEB"></a>
+                        </div>
                       </div>
-                      <div class="carousel-item">
-                        <a href="https://felipe-gabriel-desenvolvedor-web.vercel.app/"><img src="img/pg-principal-siteFelipe.png" class="d-block w-100" alt="Página principal do site Felipe Gabriel - Desenvolvedor WEB"></a>
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjetos" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProjetos" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjetos" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselProjetos" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
                   </div>
+                </div>
+              </diV>
             </div>    
         </div>
     </section><!--Fim Projetos-->
 
-    <section id="contatos"> <!--Inicio Contatos-->
+    <section id="contatos" data-aos="fade-right"> <!--Inicio Contatos-->
         <div class="container">
             <div class="row">
                  <!--Incio Textos-->
                 <h1 class="border-bottom border-secondary display-4 text-center">Contatos</h1>
                     <div class="col-md-6 mt-4">
                         <h3>Informações de Contatos:</h3>
-                            <p><i class="fa-brands fa-whatsapp"></i> (65) 99677-8432</p>
+                            <a href="https://web.whatsapp.com/send?phone=5565996778432?text=Olá%20Felipe,%20tudo%20bem?" target="_blank"><i class="fa-brands fa-whatsapp fa-lg"></i> (65) 99677-8432</a>
                             <p><i class="fa-solid fa-envelope"></i> felipe.g.silva2018@gmail.com</p>
                     </div>  
                     <div class="col-md-6 mt-4">
@@ -163,7 +182,13 @@
         </div>
     </div>
 
-
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration:1000,
+    });
+  </script>
     <!-- Optional JavaScript; choose one of the two! -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
