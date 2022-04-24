@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" sizes="16x16"  href="img/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Felipe Gabriel - Desenvolverdor WEB</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- notmalize CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- CSS personalisado -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <!--JavaScript personalisado -->
+    <script src="js/logica.js"></script>
+     <!-- Font Awesome -->
+     <script src="https://kit.fontawesome.com/0c6d3f23ae.js" crossorigin="anonymous"></script>
+
+    <!--[if lt IE 9]>
+	    <script src="html5shiv.js"></script>
+    <![endif]-->
+
+</head>
+<body class="bg-dark">
+    <header> <!-- Inicio-->
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-black">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/logo_FG_tranparent.png" alt="Logo 'Felipe Gabriel - Desenvolvedor WEB'" width="142" height="44"></a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-principal" aria-controls="nav-principal" aria-expanded="false" aria-label="Alternar navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contatos">Contatos</a>
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+        </nav>
+    </header> <!--Header Fim-->
+
+    <section id="apresentacao"> <!--Inicio Apresentação-->
+        <div class="container">
+          <div class="row ">
+            <diV class="col-md-6 d-flex"> <!--Incio Textos-->
+              <div class="align-self-center text-center mt-4">
+                <h1 class="border-bottom border-secondary display-4">Hola! Sou Felipe Gabriel</h1>
+                <p>
+                    Desenvolvedor WEB em HTML | CSS | JavaScript | PHP | MySQL | jQuery
+                </p>
+              </div>
+            </diV><!--Fim Textos-->
+            <div class="col-md-6">
+              <img src="img/fotoMinha.jpeg" alt="Foto do criador do site - Felipe Gabriel - sorrindo com um chapéu preto, de óculos e uma camiseta amarela." class="rounded">
+            </div>
+          </div>
+        </div>
+    </section><!--Fim apresentacao-->
+
+    <section id="sobre"> <!--Inicio Sobre-->
+        <div class="container">
+          <div class="row ">
+            <diV class="col-md-6 d-block text-center"> <!--Incio Textos-->
+              <div class="mt-4">
+                <h1 class="border-bottom border-secondary display-1">Sobre Mim</h1>
+              </div>
+            </diV>
+            <diV class="d-flex col-md-6 text-justify"> <!--Incio Textos-->
+                <div class="align-self-center text-justify mt-4">
+                  <p>
+                        Me chamo Felipe Gabriel, tenho 19 anos e amo tecnologia. Recentemente me formei em Técnico em Desenho de Construção Civil pelo Instituto Federal de Educação,
+                        Ciência e Tecnologia do Estado de Mato Grosso - Campus Várzea Grande. Mas essa não era a minha área de paixão, logo descobri que a minha vida mudaria. Comecei a estudar Desenvolvimento WEB
+                        através da plataforma Udemy Academy pelo curso: "Desenvolvimente WEB Completo 2022". Atualmente faço graduação em Análise e Desenvolvimeto de Sistemas pela Graduação Digital Descomplica e 
+                        amo cada vez mais estar por dentro de todo esse mundo maravilho que é a tecnologia.
+                  </p>
+                  <a class="btn btn-outline-light" href="#projetos">Ver Trabalhos</a>
+                  <a href="documents/Felipe Gabriel Costa da Silva Currículo.pdf" class="btn btn-outline-light">Baixar Currículo</a>
+                </div>
+              </diV>
+          </div>
+        </div>
+    </section><!--Fim Sobre-->
+  
+    <section id="projetos"> <!--Inicio Projetos-->
+        <div class="container">
+            <div class="row">
+                <div id="carouselProjetos" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <a href="https://app-game-mata-mosquito.vercel.app/"><img src="img/AppGameMataMosquito.png" class="d-block w-100" alt="Imagem da página de inciar do App Game Mata Mosquito."></a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="https://calculadora-javascript-tau.vercel.app/"><img src="img/calculadora-js.png" class="d-block w-100" alt="Imagem da página principal do site: Calculadora JavaScript."></a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href=""><img src="img/pg-principal-siteFelipe.png" class="d-block w-100" alt="Página principal do site Felipe Gabriel - Desenvolvedor WEB"></a>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjetos" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProjetos" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>    
+        </div>
+    </section><!--Fim Projetos-->
+
+    <section id="contatos"> <!--Inicio Contatos-->
+        <div class="container">
+            <div class="row">
+                 <!--Incio Textos-->
+                <h1 class="border-bottom border-secondary display-4 text-center">Contatos</h1>
+                    <div class="col-md-6 mt-4">
+                        <h3>Informações de Contatos:</h3>
+                            <p><i class="fa-brands fa-whatsapp"></i> (65) 99677-8432</p>
+                            <p><i class="fa-solid fa-envelope"></i> felipe.g.silva2018@gmail.com</p>
+                    </div>  
+                    <div class="col-md-6 mt-4">
+  
+                      <h3>Siga-me nas Redes Sociais:</h3>
+                            <a href="https://instagram.com/felipegabriel_l?igshid=YmMyMTA2M2Y=" class="btn btn-outline-light btn-lg"> <i class="fa-brands fa-instagram fa-lg"> </i> </a>
+                            <a href="https://www.linkedin.com/in/felipe-gabriel-519259221" class="btn btn-outline-light btn-lg"> <i class="fa-brands fa-linkedin-in fa-lg"></i> </a>
+                            <a href="https://github.com/FelipeGabrielCosta/AppGameMataMosquito.git" class="btn btn-outline-light btn-lg"> <i class="fa-brands fa-github fa-lg"></i> </i> </a>
+                    </div>          
+            </diV>
+        </div>
+    </section><!--Fim Contatos-->
+    
+    <div id="rodape"> 
+        <div class="row">   
+            <footer>
+                <div class="row mt-4 mb-4 text-center">
+                    <h6><strong> &copy; Copyright - Created by Felipe Gabriel </strong></h6>
+                    
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
