@@ -1,6 +1,7 @@
 nav a {
-  margin: auto 25px
+  margin: auto 10px;
 }
+
 .navbar-nav{
   margin-left: auto;
 }
@@ -18,12 +19,16 @@ p {
 }
 
 #apresentacao img{
-  margin-left: 50px;
+  margin: 0 auto;
 }
 
 #sobre {
   padding: 300px 30px 300px 30px;
   background: rgba(0, 0, 0, 0.171);
+}
+
+#sobre h1{
+  color: rgba(175, 175, 175,0.9);
 }
 
 #projetos {
@@ -41,8 +46,33 @@ p {
   padding-top: 20px;
 }
 
+#contatos a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
 #rodape {
   background-color: rgba(0, 0, 0, 0.171);
   padding: 15px 0;
 }
+/*Bootstrap tags
+*******************/
+@media (max-width: 1920px){
+  .container {
+    width: 1230px;
+  }
+}
 
+@media (max-width: 992px){
+  .container {
+    width: 960px;
+    max-width: 100%;
+  }
+}
+
+.container {
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+}
