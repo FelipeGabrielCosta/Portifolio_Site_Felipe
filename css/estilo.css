@@ -19,7 +19,11 @@ p {
 }
 
 #apresentacao img{
+  display: block;
   margin: 0 auto;
+  max-width: 350px;
+  width: 100%;   
+  height: auto;    
 }
 
 #sobre {
@@ -75,4 +79,11 @@ p {
    position: relative;
    margin-left: auto;
    margin-right: auto;
+}
+
+#apresentacao h1,
+#sobre h1,
+#projetos h1,
+#contatos h1 {
+    display: inline-block;
 }
